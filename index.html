@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mapa do Ecossistema de Inovação</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ecossistema de Inovação de Paracatu</h1>
+            <p>
+                Passe o mouse sobre um ator para ver detalhes e clique para
+                visitar o site.
+            </p>
+
+            <div class="map-wrapper">
+                <div class="chart-container">
+                    <canvas id="ecosystemChart"></canvas>
+                </div>
+                <div id="actors-display" class="actors-container">
+                    <h3>Atores do Ecossistema</h3>
+                    <p>Selecione uma categoria no gráfico ao lado.</p>
+                    <ul id="actors-list"></ul>
+                </div>
+            </div>
+            <button id="clear-filter-btn" class="hidden">
+                Limpar Filtro / Ver Todos
+            </button>
+        </div>
+
+        <div id="tooltip" class="tooltip-container"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script type="module" src="dist/script.js"></script>
+    </body>
+</html>
