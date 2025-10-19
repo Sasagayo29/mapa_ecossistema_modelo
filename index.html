@@ -8,31 +8,74 @@
     </head>
     <body>
         <div class="container">
-            <h1>Ecossistema de Inovação de Paracatu</h1>
-            <p>
-                Passe o mouse sobre um ator para ver detalhes e clique para
-                visitar o site.
-            </p>
-
-            <div class="map-wrapper">
-                <div class="chart-container">
-                    <canvas id="ecosystemChart"></canvas>
-                </div>
-                <div id="actors-display" class="actors-container">
-                    <h3>Atores do Ecossistema</h3>
-                    <p>Selecione uma categoria no gráfico ao lado.</p>
-                    <ul id="actors-list"></ul>
-                </div>
+            <!-- SEÇÃO DO CABEÇALHO CORRIGIDA -->
+            <div class="header-section">
+                <img
+                    src="src/assets/inovatu.png"
+                    alt="Logo do Ecossistema"
+                    class="title-logo"
+                />
+                <h1>Ecossistema de Inovação de Paracatu</h1>
             </div>
-            <button id="clear-filter-btn" class="hidden">
-                Limpar Filtro / Ver Todos
-            </button>
+
+            <!-- RESTANTE DO CONTEÚDO -->
+            <div class="project-description">
+                <p class="description-text">
+                    A depender de competências e recursos capazes de fazer
+                    frente aos competidores globais. A inovação e a
+                    sustentabilidade se tornam elementos essenciais para atingir
+                    essa competitividade, principalmente no que tange ao aumento
+                    de produtividade, à redução de custos e ao aprimoramento
+                    tecnológico. Cidades e Estados que criam condições para o
+                    nascimento de ecossistemas regionais de inovação estarão
+                    mais bem posicionados para enfrentar e vencer os desafios e
+                    aproveitar as oportunidades que este século apresenta. Por
+                    isso, é necessário desenvolver ecossistemas de inovação, os
+                    quais permitam que pessoas com talento, ideias e recursos
+                    possam transformar, por meio da inovação, a realidade em que
+                    vivemos, gerando melhor qualidade de vida e de
+                    sustentabilidade para a nossa sociedade. O investimento
+                    nesse tipo de sistema gera uma transferência de conhecimento
+                    e tecnologias capazes de impulsionar o desenvolvimento da
+                    região.
+                </p>
+
+                <div class="map-wrapper">
+                    <div class="chart-container">
+                        <canvas id="ecosystemChart"></canvas>
+                    </div>
+                    <div id="actors-display" class="actors-container">
+                        <h3>Atores do Ecossistema</h3>
+                        <p>Selecione uma categoria no gráfico ao lado.</p>
+                        <ul id="actors-list"></ul>
+                    </div>
+                </div>
+
+                <button id="clear-filter-btn" class="btn hidden">
+                    Limpar Filtro / Ver Todos
+                </button>
+            </div>
+            <div class="button-container">
+                <a
+                    href="https://nortevalley.com/wp-content/uploads/2021/05/Ecossistema-de-Inovação-Montes-Claros-Versão-09062020.pdf"
+                    target="_blank"
+                    class="btn"
+                >
+                    Planejamento do Ecossistema
+                </a>
+                <a
+                    href="https://nortevalley.com/wp-content/uploads/2021/05/Montes-Claros-Relatório-Executivo-MG-FINAL-17-11-2020.pdf"
+                    target="_blank"
+                    class="btn secondary"
+                >
+                    Relatório Executivo
+                </a>
+            </div>
         </div>
 
         <div id="tooltip" class="tooltip-container"></div>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
         <script type="module" src="dist/script.js"></script>
     </body>
 </html>
